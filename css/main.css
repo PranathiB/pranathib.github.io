@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    background-color: #542437;
+    overflow: auto;
+    color: #ECD078;
+    box-shadow: #333 0px 0px 10px;
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+    font-size: small;
+}
+
+main:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.card {
+    float: left;
+    width: 33%;
+    padding: 15px;
+}
+.card-inner {
+    padding: 15px;
+    box-shadow: #999 0px 0px 10px;
+    border-radius: 1px;
+    background-color: #D3E2B6;
+}
+.card h3 {
+    text-align: center;
+}
+
+@media(max-width: 414px) {
+    .card {
+        float: none;
+        width: 100%;
+    }
+}
