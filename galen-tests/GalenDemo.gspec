@@ -1,6 +1,6 @@
 @objects
     Header          css         html>body>header
-    Banner          css         .banner-container.content
+    Banner          css         .banner-container
     Card-*          css         .card
     Footer          css         html>body>footer
 
@@ -20,7 +20,7 @@
     @on desktop
         Banner:
             below Header
-            width is 990px
+            width is 960px
             height is 430px
 
     @on mobile
