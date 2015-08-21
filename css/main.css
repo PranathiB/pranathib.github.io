@@ -13,32 +13,77 @@ header {
     color: #ECD078;
     box-shadow: #333 0px 0px 10px;
 }
-
-footer {
-    padding: 5px;
-    text-align: center;
-    font-size: small;
+@media(max-width: 414px) {
+    header h1 {
+        margin: 0;
+        font-size: 1.5em;
+    }
 }
 
-main:after {
+footer {
+    padding: 10px;
+    text-align: center;
+    font-size: small;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background-color: #C02942;
+}
+
+.row {
+    margin: 0 -15px;
+}
+.row:after {
     clear: both;
     content: "";
     display: table;
 }
 
+.banner {
+    background-color: #D95B43;
+    color: #fff;
+}
+@media(max-width: 414px) {
+    .banner {
+        display: none;
+    }
+}
 .card {
     float: left;
     width: 33%;
     padding: 15px;
 }
 .card-inner {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    border-radius: 2px;
+    color: rgba(0,0,0,.54);
+}
+.card-image {
+    background-color: transparent;
+    background-size: cover;
+    min-height: 100px;
     padding: 15px;
-    box-shadow: #999 0px 0px 10px;
-    border-radius: 1px;
-    background-color: #D3E2B6;
+}
+.card-image-1 {
+    background-image: url('../img/card-1.jpg');
+}
+.card-image-2 {
+    background-image: url('../img/card-2.jpg');
+}
+.card-image-3 {
+    background-image: url('../img/card-3.jpg');
 }
 .card h3 {
-    text-align: center;
+    margin: 0;
+    font-weight: normal;
+    color: #fff;
+}
+.card p {
+    margin: 0;
+    padding: 15px;
+    font-size: .8em;
 }
 
 @media(max-width: 414px) {
