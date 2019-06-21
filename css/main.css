@@ -21,12 +21,19 @@ header {
 }
 
 footer {
-    padding: 10px;
+/*     padding: 10px;
     text-align: center;
     font-size: small;
     width: 100%;
     color: #fff;
-    background-color: #4D3B5C;;
+    background-color: #4D3B5C;; */
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .row {
