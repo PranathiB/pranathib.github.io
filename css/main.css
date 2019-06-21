@@ -25,7 +25,6 @@ footer {
     text-align: center;
     font-size: small;
     width: 100%;
-    color: #fff;
     background-color: #4D3B5C;; */
     
     position: absolute;
@@ -34,6 +33,10 @@ footer {
     height: 100px;
     width: 100%;
     overflow: hidden;
+    color: #fff;
+    background-color: #4D3B5C;
+    text-align: center;
+    font-size: small;
 }
 
 .row {
